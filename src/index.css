@@ -1,0 +1,208 @@
+/* general */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    font-size: .9rem;
+    background-color: #ededec;
+    color: rgb(83, 83, 83);
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #FF4C4C;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #673F69;
+}
+
+h3 {
+    font-size: 1.2rem; 
+    color: #673F69;
+}
+
+h4 {
+    color: #FF4C4C;
+}
+
+h5 {
+    font-weight: normal;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    margin: .5rem;
+    border: none;
+    color: #FFDE4D;
+    background-color:#673F69;
+    border-radius: .2rem;
+    padding: .5rem 1rem;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color:#FF4C4C;
+    color: #ededec;
+}
+
+main, footer {
+    max-width: 700px;
+}
+
+footer {
+    font-size: .8rem;
+}
+
+a {
+    text-decoration: none;
+    color:#FF4C4C;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #FFB22C;
+}
+
+
+/* main content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    gap: 6rem;
+}
+
+.new-year-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+input {
+    padding: .5rem;
+    border: none;
+    border-radius: .2rem;
+    font-family: inherit;
+    color:#FF4C4C;
+    font-weight: 500;
+}
+
+input:focus-visible {
+    outline-color: #FFB22C;
+}
+
+form {
+    background-color: rgb(214, 214, 214);
+    padding: .75rem;
+    border-radius: .2rem;
+    margin-block-start: 4rem;
+}
+
+
+label {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.year-info, .sign-info {
+    margin-block: 4rem;
+}
+
+.year-info h3 {
+    margin: 0;
+}
+
+.year-info p, .sign-info p {
+    background-color: #f3f3f3;
+    padding: .5rem;
+    display: flex;
+    gap: 3rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.year-info p span, .sign-info p span {
+    font-weight: normal;
+
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    font-size: .8rem;
+    font-weight: 500;
+
+}
+
+.zodiac-form {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.result {
+    font-size: 1rem;
+    margin-block: auto;
+    font-weight: 600;
+}
+
+.result span {
+    color: #FF4C4C;
+}
+
+.summary, .calendar-info {
+    margin-block-end: 5rem;
+}
+
+.method-btns button {
+    margin: 0;
+    border-radius: 0;
+    background-color: #FF4C4C;
+    color: #ededec;
+}
+
+.method-btns button:first-of-type {
+    border-radius: .2rem 0 0 .2rem;
+}
+
+.method-btns button:last-of-type {
+    border-radius: 0 .2rem .2rem 0;
+}
+
+.method-btns button.unselected {
+    background-color: rgb(214, 214, 214);
+    color: rgb(83, 83, 83);
+}
+
+.method-btns button.unselected:hover {
+    color: #FFDE4D;
+    background-color:#673F69;
+}
+
+.sign-info span {
+    color: #FF4C4C;
+    font-weight: 600; 
+}
+
+/* media queries */
+@media screen and (min-width: 1000px) {
+    main, footer {
+        margin-inline-start: 10rem;
+    }
+}
